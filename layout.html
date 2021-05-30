@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+		$("#display_movies").click(function(){
+		  $('#right').load("movie.html");
+		});
+		$("#book_ticket").click(function(){
+		  $('#right').load('bookings.html');
+		});
+	});
+	</script>
+</head>
+<body>
+	<div style="background-color: lightpink; width: 100%">
+		<center>
+			<h1>CITY PRIDE MULTIPLEX</h1> <br>
+			<h4>Address: 134, Purasaiwakkam chennai</h4>
+		</center>
+		<br/>
+	</div>
+
+	<div style="width: 100%">
+		<div id="left" style="background-color: lightblue; float: left;width: 25%; height: 700px; ">
+			<a id="display_movies" href="#"><h3>Current Movies </h3></a>
+			<h3><a id="book_ticket" href="#"> Bookings </a></h3>
+		</div>
+		<div id="right" style="background-color: lightyellow; float: left;width: 75%;">
+			<center>
+				<img src="kong vs godz.jpg" height="700" width="500">
+			</center>
+		</div>
+		
+	</div>
+
+</body>
+</html>

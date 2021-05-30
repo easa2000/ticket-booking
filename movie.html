@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current Movie</title>
+
+	<script type="text/javascript">
+		function ShowMovies(){
+			var current = document.getElementById("current_movie");
+			var status1 = document.getElementById("status1");
+			var status2 = document.getElementById("status2");
+
+			if (current.value == "1") {
+				status1.style.display = "block";
+			}
+			else{
+				status1.style.display = "none";
+			}
+
+			if (current.value == "2") {
+				status2.style.display="block";
+			}else{
+				status2.style.display = "none";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h3>Current Movie Status</h3>
+	<select id="current_movie" onchange="ShowMovies()">
+		<option value="N">choose movie</option>
+		<option value="1">Mankatha</option>
+		<option value="2">Viswaasam</option>
+	</select>
+	<hr/>
+
+	<div id="status1" style="display: none">
+		<h3>Availability(Checked box) Status for Movie Mankatha is as follows</h3>
+		<form>
+			<input type="checkbox" name="timings"> 9 am to 12 pm<br>
+			<input type="checkbox" name="timings"> 12 pm to 3 pm<br>
+			<input type="checkbox" name="timings"> 3 pm to 6 pm<br>
+			<input type="checkbox" name="timings"> 6 pm to 9 pm<br>
+			<input type="checkbox" name="timings"> 9 pm to 12 am<br>
+		</form>
+	</div>
+
+	<div id="status2" style="display: none" >
+		<h3>Availability(Checked box) Status for Movie Visawaasam is as follows</h3>
+		<form>
+			<input type="checkbox" name="timings"> 9 am to 12 pm<br>
+			<input type="checkbox" name="timings"> 12 pm to 3 pm<br>
+			<input type="checkbox" name="timings"> 3 pm to 6 pm<br>
+			<input type="checkbox" name="timings"> 6 pm to 9 pm<br>
+			<input type="checkbox" name="timings"> 9 pm to 12 am<br>
+		</form>
+	</div>
+
+</body>
+</html>
